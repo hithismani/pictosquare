@@ -20,7 +20,6 @@ def run(args):
 			colour = "#ffffff"
 	folderfetcher.folderSquarer(args.dir, colour)
 
-
 def main():
 	parser=argparse.ArgumentParser(description="picToSquare")
 	parser.add_argument("-dir",help="Set Input Directory. Set 'currentdir' for current directory." ,dest="dir", type=str, required=True, default="currentdir")

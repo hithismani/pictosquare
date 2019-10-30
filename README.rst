@@ -41,10 +41,13 @@ Advantages:
 - All pictures are resized into a “picToSquare” directory 
 
 How It Works: 
------------
+-------------
 
 1. pip install pictosquare
-2. run <code>pictosquare -dir *Your Image Directory Path*</code> 
+2. run
+           
+    pictosquare -dir *Your Image Directory Path*
+
 3. visit “picToSquare” folder within the directory specified for your images. 
 
 
@@ -54,11 +57,11 @@ Running Examples:
 
 1. Basic Script Usage: 
 
-	<code>pictosquare -dir C://UserName/FolderToBeResized</code> 
+	pictosquare -dir C://UserName/FolderToBeResized
 
 2. Custom Colours: 
 
-	<code>pictosquare -dir C://UserName/FolderToBeResized -color black</code>
+	pictosquare -dir C://UserName/FolderToBeResized -color black
 
 
 Points To Remember: 
@@ -76,50 +79,61 @@ Experimental:
 
 - Watermark each image. 
     - Save a .png image with the name “watermark.png” in the same directory you want the script to look up. The script would automatically watermark each picture with the watermarked image.
-    - Optionally set the image size of the watermark by setting its percentage at the end of the filename. Example “watermark**20**.png” implying watermark that’s sized 20% of the image. 
+    - Optionally set the image size of the watermark by setting its percentage at the end of the filename.
+        
+        Example “watermark**20**.png” implying watermark that’s sized 20% of the image. 
     - End the filename with an optional placement. 
         Positions Include: 
     	- “-bl” - bottom left (default) 
     	- “-br” - bottom right 
     	- “-tl” - top left 
     	- “-tr” - top right 
-
-    	Usage: “watermark **-bl**.png” (without spaces!) 
+    	    
+            Example: Save file with “watermark **-bl**.png” (without spaces!) 
 - Set a custom background color for specific images. 
   - Add a “#hexcode” at the end of the filename from your folder and watch the script add that to the specific image. Usage: “imagename **#eeeeeeee**.png” (without spaces!) 
 - Set a custom background that is neither “black” not “white” for all images. 
   - Add “-color **hex-code**” to the end of your request. 
-  - Example: <code>pictosquare -dir C://UserName/FolderToBeResized -color ***cccccc*** </code> 
+  - Example: 
+    
+    pictosquare -dir C://UserName/FolderToBeResized -color ***cccccc*** 
+
 - Pick Dominant Colour For Every Image: `Powered by ColorThief <https://github.com/fengsp/color-thief-py>`_
 
     - Set colour to "thief".
-    - Run: <code>pictosquare  -dir C://UserName/FolderToBeResized -color thief</code> 
+    - Run: 
+        pictosquare  -dir C://UserName/FolderToBeResized -color thief
 
 Future Plans 
 ------------
 
-- Probably turn this into an installable package. 
+- Probably turn this into an installable package. (Done!)
 - Add a friendly GUI to perform the same actions. 
 
 Credits
 -------
 
+Features & Depedencies:
 
+- `PIL(low) <https://pillow.readthedocs.io/en/stable/>`_
 - `Colorthief by @fengsp <https://github.com/fengsp/color-thief-py>`_
-- `Image Credits (For Previews Attached) <htps://unsplash.com>`_
+- `Image Credits (For Previews Attached) @Unsplash <htps://unsplash.com>`_
 
-- Code Help: 
+Code Help: 
+
 - `Image Processing in Python with Pillow <https://auth0.com/blog/image-processing-in-python-with-pillow/>`_
-- Code Help: 
 - `As Mackay <https://stackoverflow.com/users/7891828/as-mackay>`_ & `Joseph <https://stackoverflow.com/users/9994064/joseph>`_  snippet on this `stack overflow post   <https://stackoverflow.com/questions/44231209/resize-rectangular-image-to-square-keeping-ratio-and-fill-background-with-black/44231784>`_
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+This package was easily adapted into a pip installable package using Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 
 Changelog
 ----------
+- 30/10/2019
+    - Made script PIP Installable.
+    - Fixed many PNG file squaring issues.
 
 - 28/05/2019
     - Added colorThief Support.
