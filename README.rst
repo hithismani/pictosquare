@@ -21,17 +21,18 @@ This script was inspired by how there are multiple free/paid apps to accomplish 
 *Tested On Windows 10 + Python 3.6 + PILLOW 6.0* 
 
 Terminal Sample:
-![console-script](https://i.imgur.com/An933hI.png)
+
+.. image:: https://i.imgur.com/An933hI.png
 
 Output Sample: 
-![output-sample](https://i.imgur.com/SS5Vnp3.png) 
+
+.. image:: https://i.imgur.com/SS5Vnp3.png
 
 
 * Free software: MIT license
 
 Advantages: 
 -----------
-
 
 - Does not compress or crop images. 
 - Relatively quick. 
@@ -40,12 +41,12 @@ Advantages:
 - All pictures are resized into a “picToSquare” directory 
 
 How It Works: 
--------------
-
+-----------
 
 1. pip install pictosquare
-2. run <code>pictosquare -dir <i>(Your Image Directory Path)</i></code> 
+2. run <code>pictosquare -dir *Your Image Directory Path*</code> 
 3. visit “picToSquare” folder within the directory specified for your images. 
+
 
 Running Examples: 
 -----------------
@@ -53,11 +54,11 @@ Running Examples:
 
 1. Basic Script Usage: 
 
-	<code>python src/index.py -dir C://UserName/FolderToBeResized</code> 
+	<code>pictosquare -dir C://UserName/FolderToBeResized</code> 
 
 2. Custom Colours: 
 
-	<code>python src/index.py -dir C://UserName/FolderToBeResized -color black</code>
+	<code>pictosquare -dir C://UserName/FolderToBeResized -color black</code>
 
 
 Points To Remember: 
@@ -88,30 +89,29 @@ Experimental:
   - Add a “#hexcode” at the end of the filename from your folder and watch the script add that to the specific image. Usage: “imagename **#eeeeeeee**.png” (without spaces!) 
 - Set a custom background that is neither “black” not “white” for all images. 
   - Add “-color **hex-code**” to the end of your request. 
-  - Example: <code>python src/index.py -dir C://UserName/FolderToBeResized -color ***cccccc*** </code> 
-- Pick Dominant Colour For Every Image: (Powered by [ColorThief](https://github.com/fengsp/color-thief-py))
-    
-    Set colour to "thief".
-    
-    Run: <code>python src/index.py -dir C://UserName/FolderToBeResized -color thief</code> 
+  - Example: <code>pictosquare -dir C://UserName/FolderToBeResized -color ***cccccc*** </code> 
+- Pick Dominant Colour For Every Image: `Powered by ColorThief <https://github.com/fengsp/color-thief-py>`_
+
+    - Set colour to "thief".
+    - Run: <code>pictosquare  -dir C://UserName/FolderToBeResized -color thief</code> 
 
 Future Plans 
 ------------
 
-
 - Probably turn this into an installable package. 
 - Add a friendly GUI to perform the same actions. 
 
-
 Credits
-----------
+-------
 
 
-- [Colorthief by @fengsp](https://github.com/fengsp/color-thief-py)
-- Image Credits (For Previews Attached): [Unsplash.com](htps://unsplash.com) 
+- `Colorthief by @fengsp <https://github.com/fengsp/color-thief-py>`_
+- `Image Credits (For Previews Attached) <htps://unsplash.com>`_
+
 - Code Help: 
-- “Image Processing in Python with Pillow” - [Blog Post on auth0](https://auth0.com/blog/image-processing-in-python-with-pillow/)
-- [As Mackay](https://stackoverflow.com/users/7891828/as-mackay) & [Joseph](https://stackoverflow.com/users/9994064/joseph)’s snippet on this [stack overflow post](https://stackoverflow.com/questions/44231209/resize-rectangular-image-to-square-keeping-ratio-and-fill-background-with-black/44231784) 
+- `Image Processing in Python with Pillow <https://auth0.com/blog/image-processing-in-python-with-pillow/>`_
+- Code Help: 
+- `As Mackay <https://stackoverflow.com/users/7891828/as-mackay>`_ & `Joseph <https://stackoverflow.com/users/9994064/joseph>`_  snippet on this `stack overflow post   <https://stackoverflow.com/questions/44231209/resize-rectangular-image-to-square-keeping-ratio-and-fill-background-with-black/44231784>`_
 
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
