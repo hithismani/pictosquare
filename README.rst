@@ -43,11 +43,9 @@ How It Works:
 -------------
 
 
-1. git pull this repository 
-2. cd pictosquare 
-3. <code>pip install requirements.txt</code> 
-4. run <code>python src/index.py -dir <i>(Your Image Directory Path)</i></code> 
-5. visit “picToSquare” folder within the directory specified for your images 🖼. 
+1. pip install pictosquare
+2. run <code>pictosquare -dir <i>(Your Image Directory Path)</i></code> 
+3. visit “picToSquare” folder within the directory specified for your images. 
 
 Running Examples: 
 -----------------
